@@ -41,6 +41,7 @@
 		55FED95A29E5B2D2006CE32B /* TrackerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED95929E5B2D2006CE32B /* TrackerStore.swift */; };
 		55FED95C29E5B51C006CE32B /* UIColorMarshalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED95B29E5B51C006CE32B /* UIColorMarshalling.swift */; };
 		55FED95E29E5B888006CE32B /* TrackerCategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED95D29E5B888006CE32B /* TrackerCategoryStore.swift */; };
+		C5F161482A53F5BA00C20D5B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F161472A53F5BA00C20D5B /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		55FED95929E5B2D2006CE32B /* TrackerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerStore.swift; sourceTree = "<group>"; };
 		55FED95B29E5B51C006CE32B /* UIColorMarshalling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorMarshalling.swift; sourceTree = "<group>"; };
 		55FED95D29E5B888006CE32B /* TrackerCategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCategoryStore.swift; sourceTree = "<group>"; };
+		C5F161472A53F5BA00C20D5B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				55F6512129CF0BFF00C3E4F2 /* Tracker.swift */,
 				55F6512329CF14E700C3E4F2 /* TrackerCategory.swift */,
 				55F6512529CF15D600C3E4F2 /* TrackerRecord.swift */,
+				C5F161472A53F5BA00C20D5B /* CoreDataStack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				559D0AC129E5280800B2B82E /* Model.xcdatamodeld in Sources */,
 				55FED95A29E5B2D2006CE32B /* TrackerStore.swift in Sources */,
 				55CCE51029D7040E001B23E6 /* ScheduleViewController.swift in Sources */,
+				C5F161482A53F5BA00C20D5B /* CoreDataStack.swift in Sources */,
 				55A6B16C29CE1D17005449F4 /* TrackerCell.swift in Sources */,
 				55F6512829CF6D5E00C3E4F2 /* TrackerCategoryLabel.swift in Sources */,
 				5531771229D2D04500DEFCFF /* EmojiCell.swift in Sources */,

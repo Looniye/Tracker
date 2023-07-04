@@ -17,7 +17,8 @@ final class TrackerRecordStore: NSObject {
     // MARK: - Lifecycle
     
     convenience override init() {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+		let coreDataStack = CoreDataStack.shared
+		let context = coreDataStack.persistentContainer.viewContext
         self.init(context: context)
     }
     

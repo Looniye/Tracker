@@ -10,7 +10,7 @@ final class Button: UIButton {
         translatesAutoresizingMaskIntoConstraints = false
         setTitleColor(.white, for: .normal)
         titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        layer.cornerRadius = 24
+        layer.cornerRadius = 16
     }
     
     static func danger(title: String) -> Self {

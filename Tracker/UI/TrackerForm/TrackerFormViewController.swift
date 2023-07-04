@@ -170,8 +170,6 @@ final class TrackerFormViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private var collectionViewHeightConstraint: NSLayoutConstraint!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -216,29 +214,13 @@ final class TrackerFormViewController: UIViewController {
     
     // MARK: - Methods
     
-    private func checkFormValidation() {
-        if data.label.count == 0 {
-            isConfirmButtonEnabled = false
-            return
-        }
-        
-        if isValidationMessageVisible {
-            isConfirmButtonEnabled = false
-            return
-        }
-        
-        if category == nil || data.emoji == nil || data.color == nil {
-            isConfirmButtonEnabled = false
-            return
-        }
-        
-        if let schedule = data.schedule, schedule.isEmpty {
-            isConfirmButtonEnabled = false
-            return
-        }
-        
-        isConfirmButtonEnabled = true
-    }
+	private func checkFormValidation() {
+		if data.label.count == 0 || isValidationMessageVisible || category == nil || data.emoji == nil || data.color == nil || (data.schedule != nil && data.schedule!.isEmpty) {
+			isConfirmButtonEnabled = false
+		} else {
+			isConfirmButtonEnabled = true
+		}
+	}
 }
 
 // MARK: - Layout methods
@@ -340,13 +322,10 @@ extension TrackerFormViewController: UITextFieldDelegate {
 // MARK: - UITableViewDataSource
 
 extension TrackerFormViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if data.schedule == nil {
-            return 1
-        }
-        return 2
-    }
-    
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return data.schedule == nil ? 1 : 2
+	}
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let listCell = tableView.dequeueReusableCell(withIdentifier: ListCell.identifier) as? ListCell
         else { return UITableViewCell() }
