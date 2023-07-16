@@ -31,4 +31,10 @@ extension UIColor {
 		UIColor(named: "Color selection 17")!,
 		UIColor(named: "Color selection 18")!,
 	]
+	
+	static let gradient = [
+		UIColor(named: "gBlue")!,
+		UIColor(named: "gGreen")!,
+		UIColor(named: "gRed")!,
+	]
 }
