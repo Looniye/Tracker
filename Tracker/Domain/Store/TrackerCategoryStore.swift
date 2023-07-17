@@ -34,10 +34,10 @@ final class TrackerCategoryStore: NSObject {
 	// MARK: - Lifecycle
 	
 	convenience override init() {
-		let coreDataStack = CoreDataStack.shared
-		let context = coreDataStack.persistentContainer.viewContext
-		try! self.init(context: context)
-	}
+			let coreDataStack = CoreDataStack.shared
+			let context = coreDataStack.persistentContainer.viewContext
+			try! self.init(context: context)
+		}
 	
 	init(context: NSManagedObjectContext) throws {
 		self.context = context
