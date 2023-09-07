@@ -3,6 +3,7 @@
 # Ссылки
 
 [Дизайн Figma](https://www.figma.com/file/owAO4CAPTJdpM1BZU5JHv7/Tracker-(YP)?t=SZDLmkWeOPX4y6mp-0)
+
 <img src="https://github.com/Looniye/iOS-FakeNFT-StarterProject-Public/assets/40362717/3acf854c-1a8e-4407-9a8d-6d7d74942209" width="300">
 <img src="https://github.com/Looniye/iOS-FakeNFT-StarterProject-Public/assets/40362717/1604ad00-31ed-4363-8f5c-387b0ed430d5" width="300">
 
